@@ -1,0 +1,167 @@
+.apartment-detail {
+
+  max-width: 1240px;
+  margin: 30px auto;
+  padding: 0 20px;
+
+  &__image {
+    width: 100%;
+    height: 415px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start; 
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 36px;
+        color: #FF6060;
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .tag {
+          background-color: #FF6060;
+          color: white;
+          padding: 5px 15px;
+          border-radius: 20px;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &__host-rating {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+      justify-content: space-between; 
+      height: 100%;
+
+      &__host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          object-fit: cover;
+          background-color: grey;
+        }
+
+        p {
+          font-size: 20px;
+          color: #FF6060;
+        }
+      }
+
+      &__rating {
+        display: flex;
+        justify-content: flex-end; 
+        gap: 5px;
+        font-size: 25px;
+
+        .filled {
+          color: #FF6060;
+        }
+      }
+    }
+  }
+
+  // Accordion Section
+
+  &__accordion-wrapper {
+
+    margin-top: 30px;
+
+    .accordion {
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 30px;
+      align-items: flex-start;
+
+    }
+
+    .accordion__item {
+
+      
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+    }
+    
+  }
+  
+
+  @media (max-width: 768px) {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: normal;
+
+      &__host-rating {
+
+        flex-direction: row-reverse;
+        align-items: center;
+
+      }
+    }
+  }
+
+
+@media (max-width: 600px) {
+
+  &__content {
+
+
+    &__host-rating {
+
+      &__rating {
+
+        font-size: 18px;
+      }
+    }
+  }
+    &__accordion-wrapper {
+      
+      .accordion {
+        flex-direction: column;
+        gap: 0;
+    
+      }
+  }
+}
+}
+
