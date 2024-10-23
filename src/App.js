@@ -10,7 +10,7 @@ import NotFound from './components/NotFound';
 const App = () => {
   return (
     <Router>
-      <div className='App'>
+      <div>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
