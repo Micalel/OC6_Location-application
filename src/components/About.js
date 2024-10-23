@@ -5,12 +5,12 @@ import Accordion from './Accordion';
 
 const About = () => {
     return (
-        <main>
-            <section className="about-img-container">
-                <img src={img} alt="A beautiful background depicting the company values" />
+        <main className='main-about'>
+            <section className="about__img-container">
+                <img className='about__img-container__img' src={img} alt="" />
             </section>
             
-            <section className="about-accordion-wrapper">
+            <section className="about__accordion-wrapper">
                 <Accordion items={[
                    { title : "Fiabilité", content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." },
                    { title: "Respect", content: "La bienvieillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." },

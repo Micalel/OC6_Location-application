@@ -30,8 +30,10 @@
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    font-size: clamp(24px, 3vw, 48px);
-    background-color: none;
+    max-width: 100%;
+    text-align: center;
+    font-size: clamp(35px, 3vw, 48px);
+    white-space: normal;
   }
   
   .footer {
