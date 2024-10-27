@@ -13,8 +13,7 @@ const AccordionItem = ({ title, content }) => {
     return (
         <div className="accordion__item">
             <div 
-                className={`accordion__header ${isOpen ? 'accordion__header--open' : ''}`} 
-            >
+                className={`accordion__header ${isOpen ? 'accordion__header--open' : ''}`} >
                 <span>{title}</span>
                 <span className={`accordion__arrow ${isOpen ? 'accordion__arrow--open' : ''}`}
                 onClick={toggleAccordion}>
@@ -22,7 +21,7 @@ const AccordionItem = ({ title, content }) => {
                 </span>
             </div>
             <div className={`accordion__content ${isOpen ? 'accordion__content--open' : ''}`}>
-                <p>{content}</p>
+                <div className='accordion__content--opened'>{content}</div>
             </div>
         </div>
     );

@@ -16,6 +16,7 @@ const ApartmentDetail = () => {
     if (!apartment) {
       navigate("/404/");
     }
+    
   }, [apartment, navigate]);
 
   if (!apartment) {
